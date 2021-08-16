@@ -1,0 +1,67 @@
+<form (ngSubmit)="onSubmit()" #comicForm="ngForm">
+  <label for="publisher">Publisher</label>
+  <input
+    type="text"
+    id="publisher"
+    class="form-control"
+    ngModel
+    name="publisher"
+    required
+    #publisherInput="ngModel" />
+  <label for="series">Series</label>
+  <input
+    type="text"
+    id="series"
+    class="form-control"
+    ngModel
+    name="series"
+    required
+    #seriesInput="ngModel" />
+  <label for="title">Title</label>
+  <input
+    type="text"
+    id="title"
+    class="form-control"
+    ngModel
+    name="title"
+    required
+    #titleInput="ngModel" />
+  <label for="releaseDate">Release Date</label>
+  <input
+    type="date"
+    id="releaseDate"
+    class="form-control"
+    ngModel
+    name="releaseDate"
+    required
+    #releaseDateInput="ngModel" />
+  <label for="publisher">Number in Collection</label>
+  <input
+    type="number"
+    id="collected"
+    class="form-control"
+    ngModel
+    name="collected"
+    required
+    #collectedInput="ngModel" />
+  <label for="publisher">Number Wanted</label>
+  <input
+    type="number"
+    id="wishlisted"
+    class="form-control"
+    ngModel
+    name="wishlisted"
+    required
+    #wishlistedInput="ngModel" />
+  <div class="check-group">
+    <label for="read">Read</label>
+    <input
+        type="checkbox"
+        id="read"
+        class=""
+        ngModel
+        name="read"
+        #readInput="ngModel" />
+  </div>
+
+</form>
